@@ -7,11 +7,11 @@ function NavBar() {
   return (
     <>
       {[ 'sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="navbarcolor ">
           <Container fluid>
             <Navbar.Brand href="#">NaviqPlus ProTracker</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
+            <Navbar.Offcanvas  style={{ width: '40%', }}  
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
