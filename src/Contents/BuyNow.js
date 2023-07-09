@@ -2,6 +2,8 @@ import React from 'react'
 
 const BuyNow = () => {
   return (
+    <>
+    <h2 className="section-title">Buy Now</h2> 
     <div className="buyNowContainer">
     <div className="gpsImageContainer">
       <img
@@ -22,6 +24,7 @@ const BuyNow = () => {
       </p>
     </div>
   </div>
+  </>
   )
 }
 
