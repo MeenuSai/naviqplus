@@ -1,19 +1,25 @@
 import React from 'react';
-
+import facebook from '../assets/socialMedia/facebook.png';
+import instagram from '../assets/socialMedia/instagram.png';
+import twitter from '../assets/socialMedia/twitter.png'
 const HomeFooter = () => {
   return (
     <footer className="footerContainer">
       <div className="footerContent">
-        <div className="footerSection">
+        
+        {/* <div className="footerSection">
         <h6>NaviqTracker</h6>
         <h4>About Us</h4>
           
-        </div>
+        </div> */}
         <div className="footerSection">
-          <h4>Quick Links</h4>
+          
           <ul>
             <li>
               <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">AboutUs</a>
             </li>
             <li>
               <a href="/">Products</a>
@@ -31,17 +37,35 @@ const HomeFooter = () => {
           <p>Email: info@NaviqTracker.com</p>
         </div>
         <div className="footerSection">
-            <h4>Follow Us</h4>
+            {/* <h4>Follow Us</h4> */}
             <div className="socialMediaLinks">
                 <ul>
                     <li>
-                        <a href="#">Facebook</a>
+                        <a href="#">
+							<img
+							style={{height:"30px",width:"30px"}}
+							src={facebook}
+							alt="Facebook"
+							/>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Twitter</a>
+                        <a href="#">
+							<img
+								style={{height:"30px",width:"30px"}}
+								src={instagram}
+								alt="Instagram"
+ 							/>
+						</a>
                     </li>
                     <li>
-                        <a href="#">Instagram</a>
+                        <a href="#">
+							<img
+								style={{height:"30px",width:"30px"}}	
+								src={twitter}
+								alt="Twitter"
+ 							/>
+						</a>
                     </li>
                 </ul>
             </div>

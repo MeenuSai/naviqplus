@@ -13,6 +13,7 @@ import BuyNow from '../Contents/BuyNow';
 import HomeFooter from '../Contents/HomeFooter';
 import { Link as ScrollLink } from 'react-scroll';
 
+import { HiOutlineArrowSmallRight } from 'react-icons/hi';
 function NavBar() {
 	const homeCarouselRef = useRef(null);
 	const homeProductsRef = useRef(null);
@@ -26,13 +27,13 @@ function NavBar() {
 	  elementRef.current.scrollIntoView({ behavior: 'smooth' });
 	};
   
-	const handleNavItemClick = (elementRef) => {
-	  setTimeout(() => scrollToSection(elementRef), 300);
-	};
+	// const handleNavItemClick = (elementRef) => {
+	//   setTimeout(() => scrollToSection(elementRef), 300);
+	// };
   
 	return (
 		<>
-			{[ 'sm'].map((expand) => (
+			{['md'].map((expand) => (
 				<Navbar key={expand} expand={expand} className="navbarcolor ">
 					<Container fluid>
 					<Navbar.Brand href="#">NaviqPlus ProTracker</Navbar.Brand>
@@ -58,8 +59,8 @@ function NavBar() {
 									to="homeCarousel"
 									spy
 									smooth
-									offset={-56}
-									duration={500}
+									offset={-10}
+									// duration={500}
 									onClick={() => setShowOffcanvas(false)}
 									className="nav-link"
 								>
@@ -71,8 +72,8 @@ function NavBar() {
 									to="homeProducts"
 									spy
 									smooth
-									offset={-56}
-									duration={500}
+									offset={-10}
+									// duration={500}
 									onClick={() => setShowOffcanvas(false)}
 									className="nav-link"
 								>
@@ -84,8 +85,8 @@ function NavBar() {
 									to="softwareContent"
 									spy
 									smooth
-									offset={-56}
-									duration={500}
+									offset={-10}
+									// duration={500}
 									onClick={() => setShowOffcanvas(false)}
 									className="nav-link"
 								>
@@ -97,8 +98,8 @@ function NavBar() {
 									to="buyNow"
 									spy
 									smooth
-									offset={-56}
-									duration={500}
+									offset={-10}
+									// duration={500}
 									onClick={() => setShowOffcanvas(false)}
 									className="nav-link"
 								>
@@ -110,8 +111,8 @@ function NavBar() {
 									to="contactUs"
 									spy
 									smooth
-									offset={-56}
-									duration={500}
+									offset={-10}
+									// duration={500}
 									onClick={() => setShowOffcanvas(false)}
 									className="nav-link"
 								>
@@ -123,8 +124,8 @@ function NavBar() {
 									to="contactUs"
 									spy
 									smooth
-									offset={-56}
-									duration={500}
+									offset={-10}
+									// duration={500}
 									onClick={() => setShowOffcanvas(false)}
 									className="nav-link"
 								>
