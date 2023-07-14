@@ -80,7 +80,7 @@ const HomeProducts = () => {
 			<Slider {...settings}>
 				{dataDigitalBestSeller.map((item) => (
 				<div className="card" >
-					<div className="card-top">
+					<div >
 						<img
 							src={item.linkImg}
 							alt={item.title}
@@ -88,7 +88,7 @@ const HomeProducts = () => {
 						/>
 						{/* <h1>{item.title}</h1> */}
 					</div>
-					<div className="card-bottom">
+					<div >
 						<h3>{item.price}</h3>
 						<span className="category">{item.category}</span>
 					</div>

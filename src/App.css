@@ -41,12 +41,13 @@
 .card :hover {
   /* border: 1px solid #362ec9; */
   /* background: black; */
-  /* border-radius: 8px; */
-  /* overflow: hidden; */
+  /* box-shadow: #002f5e; */
+  /* border-radius: 8px;
+  overflow: hidden;
 
-  /* height: 400px; */
-  /* color: #fff; */
-  /* cursor: pointer; */
+  height: 400px;
+  color: #fff; */
+  cursor: pointer;
 }
 /* .card-top h1 {
   font-size: 0.9rem;
